@@ -9,9 +9,11 @@ class Foo
         global $k, $s1;
         $obj->foo()->bar();
         $arr = array(0 => "zero", 1 => "one");
-        call_func(function () {
-            return 0;
-        });
+        call_func(
+            function () {
+                return 0;
+            }
+        );
         for ($i = 0; $i < $x; $i++) {
             $y += ($y ^ 0x123) << 2;
         }
@@ -52,7 +54,6 @@ class Foo
 function bar(): Foo
 {
 }
-
 
 
 ?>

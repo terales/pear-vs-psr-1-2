@@ -174,8 +174,7 @@ namespace A {
                 + $strD + $strE;
         }
 
-        protected abstract function fFour(
-        );
+        protected abstract function fFour();
 
     }
 }
