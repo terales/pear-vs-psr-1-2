@@ -1,6 +1,7 @@
 <?php
 
 namespace A {
+
     function foo()
     {
         return 0;
@@ -8,9 +9,9 @@ namespace A {
 
     function bar(
         $x,
-        $y, int $z = 1
-    )
-    {
+        $y,
+        int $z = 1
+    ) {
         $x = 0;
 // $x = 1
         do {
@@ -36,7 +37,8 @@ namespace A {
         } while (true);
         foreach (
             array(
-                "a" => 0, "b" => 1,
+                "a" => 0,
+                "b" => 1,
                 "c" => 2
             ) as $e1
         ) {
@@ -44,15 +46,19 @@ namespace A {
         }
         $count = 10;
         $x = array(
-            "x", "y",
+            "x",
+            "y",
             array(
                 1 => "abc",
-                2 => "def", 3 => "ghi"
+                2 => "def",
+                3 => "ghi"
             )
         );
         $zz = array(
-            0.1, 0.2,
-            0.3, 0.4
+            0.1,
+            0.2,
+            0.3,
+            0.4
         );
         bar(
             0, bar(
@@ -69,8 +75,12 @@ namespace A {
 
         var $numbers
             = array(
-                "one", "two", "three",
-                "four", "five", "six"
+                "one",
+                "two",
+                "three",
+                "four",
+                "five",
+                "six"
             );
         var $v = 0;
         public $path = "root";
@@ -82,8 +92,7 @@ namespace A {
         function bar(
             $v,
             $w = "a"
-        )
-        {
+        ) {
             $y = $w;
             $result = foo(
                 "arg1",
@@ -91,24 +100,29 @@ namespace A {
                 10
             );
             switch ($v) {
-            case 0:
-                return 1;
-            case 1:
-                echo '1';
-                break;
-            case 2:
-                break;
-            default:
-                $result = 10;
+                case 0:
+                    return 1;
+                case 1:
+                    echo '1';
+                    break;
+                case 2:
+                    break;
+                default:
+                    $result = 10;
             }
             return $result;
         }
 
         public static function fOne(
-            $argA, $argB, $argC, $argD,
-            $argE, $argF, $argG, $argH
-        )
-        {
+            $argA,
+            $argB,
+            $argC,
+            $argD,
+            $argE,
+            $argF,
+            $argG,
+            $argH
+        ) {
             $x = $argA + $argB + $argC
                 + $argD + $argE + $argF
                 + $argG + $argH;
@@ -128,8 +142,12 @@ namespace A {
             $z = $argA == "Some string"
                 ? "yes" : "no";
             $colors = array(
-                "red", "green", "blue",
-                "black", "white", "gray"
+                "red",
+                "green",
+                "blue",
+                "black",
+                "white",
+                "gray"
             );
             $count = count($colors);
             for (
@@ -142,9 +160,11 @@ namespace A {
         }
 
         function fTwo(
-            $strA, $strB, $strC, $strD
-        )
-        {
+            $strA,
+            $strB,
+            $strC,
+            $strD
+        ) {
             if ($strA == "one"
                 || $strB == "two"
                 || $strC == "three"
@@ -160,10 +180,12 @@ namespace A {
         }
 
         function fThree(
-            $strA, $strB, $strC, $strD,
+            $strA,
+            $strB,
+            $strC,
+            $strD,
             $strE
-        )
-        {
+        ) {
             try {
             } catch (Exception $e) {
                 foo();

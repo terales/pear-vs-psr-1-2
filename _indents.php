@@ -33,14 +33,14 @@ class Foo
                 }
                 $j = (int)$z;
                 switch ($j) {
-                case 0:
-                    $s1 = 'zero';
-                    break;
-                case 2:
-                    $s1 = 'two';
-                    break;
-                default:
-                    $s1 = 'other';
+                    case 0:
+                        $s1 = 'zero';
+                        break;
+                    case 2:
+                        $s1 = 'two';
+                        break;
+                    default:
+                        $s1 = 'other';
                 }
             } catch (exception $e) {
                 echo $val{foo . $num}[$cell{$a}];
